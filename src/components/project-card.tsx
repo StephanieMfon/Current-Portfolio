@@ -19,7 +19,9 @@ function ProjectImage({ src, alt }: { src: string; alt: string }) {
     <img
       src={src}
       alt={alt}
+      // TODO: revisit here after getting all images
       className="w-full h-48 object-cover"
+      // className=""
       onError={() => setImageError(true)}
     />
   );

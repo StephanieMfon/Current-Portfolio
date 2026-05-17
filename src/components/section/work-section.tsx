@@ -32,7 +32,8 @@ function LogoImage({ src, alt }: { src: string; alt: string }) {
 
 export default function WorkSection() {
   return (
-    <Accordion type="single" collapsible className="w-full grid gap-6">
+    <Accordion type="single" collapsible className="w-full grid gap-6" defaultValue={DATA.work[0].company}>
+      
       {DATA.work.map((work) => (
         <AccordionItem
           key={work.company}
@@ -47,12 +48,20 @@ export default function WorkSection() {
                   <div className="font-semibold leading-none flex items-center gap-2">
                     {work.company}
                     <span className="relative inline-flex items-center w-3.5 h-3.5">
-                      <ChevronRight
+                      {/* <ChevronRight
                         className={cn(
                           "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-300 ease-out",
                           "translate-x-0 opacity-0",
                           "group-hover:translate-x-1 group-hover:opacity-100",
                           "group-data-[state=open]:opacity-0 group-data-[state=open]:translate-x-0"
+                        )}
+                      /> */}
+                      <ChevronRight
+                        className={cn(
+                          "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-300 ease-out",
+                          "translate-x-0 opacity-100",
+                          "group-hover:translate-x-1",
+                          "group-data-[state=open]:hidden"
                         )}
                       />
                       <ChevronDown
