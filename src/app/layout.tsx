@@ -21,7 +21,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(DATA.url),
+  // metadataBase: new URL(DATA.url),
   title: {
     default: DATA.name,
     template: `%s | ${DATA.name}`,
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: `${DATA.name}`,
     description: DATA.description,
-    url: DATA.url,
+    // url: DATA.url,
     siteName: `${DATA.name}`,
     locale: "en_US",
     type: "website",
@@ -70,9 +70,9 @@ export default function RootLayout({
           geistMono.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
+        <ThemeProvider attribute="class" defaultTheme="dark">
           <TooltipProvider delayDuration={0}>
-            <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
+            {/* <div className="absolute inset-0 top-0 left-0 right-0 h-[100px] overflow-hidden z-0">
               <FlickeringGrid
                 className="h-full w-full"
                 squareSize={2}
@@ -81,8 +81,16 @@ export default function RootLayout({
                   maskImage: "linear-gradient(to bottom, black, transparent)",
                   WebkitMaskImage: "linear-gradient(to bottom, black, transparent)",
                 }}
-              />
-            </div>
+              /> */}
+
+<div className="absolute inset-x-0 top-0 h-[300px] z-0 pointer-events-none"
+  style={{
+    // background: "radial-gradient(ellipse 80% 60% at 50% -10%, #1a3a6e 0%, transparent 70%)",
+    background: "radial-gradient(ellipse 80% 60% at 50% -10%, #163264 0%, transparent 70%)",
+
+  }}
+/>
+            {/* </div> */}
             <div className="relative z-10 max-w-2xl mx-auto py-12 pb-24 sm:py-24 px-6">
               {children}
             </div>
