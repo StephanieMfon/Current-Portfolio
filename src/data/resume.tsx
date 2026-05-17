@@ -15,7 +15,7 @@ import { Csharp } from "@/components/ui/svgs/csharp";
 export const DATA = {
   name: "Stephanie Okpo-Mfon",
   initials: "SO",
-  // url: "https://dillion.io",
+  url: "https://stephanie-mfon.vercel.app/",
   location: "Port Harcourt, NG",
   locationLink: "https://www.google.com/maps/place/portharcourt",
   description:
