@@ -204,6 +204,7 @@ export const DATA = {
       title: "Mameeno",
       href: 'https://mameeno.com/',
       // dates: "May 2025 - Present",
+      dates: "",
       active: true,
       description:
         "Built a pregnancy and postpartum companion app that guides mothers through every stage of their journey. Mameeno brings knowledge, organization, and community into one place.",
@@ -234,7 +235,7 @@ export const DATA = {
     {
       title: "Greysoft",
       href: "https://softlead.greysoft.net/",
-      // dates: "June 2023 - Present",
+      dates: "",
       active: true,
       description:
 "A SAAS Application to help school system manage schools effectively.",
@@ -267,7 +268,7 @@ export const DATA = {
     {
       title: "Omega Loan Prediction App",
       href: "https://omega-prediction-app.netlify.app/",
-      // dates: "April 2023 - September 2023",
+      dates: "",
       active: true,
       description:
 "A Software as a Service (SaaS) Software that helps potential customers predict if an applicant is eligible to take a loan or not. Built the server-side of the application. The prediction comes from a Machine Learning model.",      technologies: [
@@ -299,7 +300,7 @@ export const DATA = {
     {
       title: "ITechHire",
       href: "https://i-tech-hire.vercel.app/",
-      // dates: "April 2023 - March 2024",
+      dates: "",
       active: true,
       description:"This HR platform simplifies global workforce management. It streamlines recruitment processes and provides tools to enhance team productivity.",
       technologies: [
